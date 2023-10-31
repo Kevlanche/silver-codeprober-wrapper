@@ -3,7 +3,9 @@
 Added a wrapper around the example "dc" silver program (silver/tutorials/dc).
 The wrapper is done in the style of [minimal probe wrapper](https://github.com/lu-cs-sde/codeprober/tree/master/minimal-probe-wrapper).
 
-The integration is very naive and not good. It intercepts messages to standard out during evaluation. If a line is printed with a colon in the middle, it is presented as a property in CodeProber. Everything to the left of the colon is the property name, and everything to the right is the property value.
+The integration is very simple. It intercepts messages to standard out during evaluation. If a line is printed with a colon in the middle, it is presented as a property in CodeProber. Everything to the left of the colon is the property name, and everything to the right is the property value.
+What this means is that there is no "on-demand" evaluation going on, the full compiler is always executed.
+With more time and knowledge of how Silver works, a better integration is likely possible.
 
 Demo video:
 
