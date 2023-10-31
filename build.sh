@@ -19,10 +19,7 @@ cd build_tmp
 
 echo "Generating jar.."
 echo "Main-Class: silverwrapper.SilverWrapper" >> Manifest.txt
-echo "Class-Path: /Users/anton/repo/silver/tutorials/dc/dc.jar /Users/anton/repo/silver/jars/commonmark-0.17.1.jar /Users
- /anton/repo/silver/jars/SilverRuntime.jar /Users/anton/repo/silver/ja
- rs/CopperCompiler.jar" >> Manifest.txt
-
+echo "Class-Path: /Users/anton/repo/silver/tutorials/dc/dc.jar /Users/anton/repo/silver/jars/commonmark-0.17.1.jar /Users/anton/repo/silver/jars/SilverRuntime.jar /Users/anton/repo/silver/jars/CopperCompiler.jar" >> Manifest.txt
 
 DST=../SilverWrapper.jar
 jar cfm $DST Manifest.txt **/*

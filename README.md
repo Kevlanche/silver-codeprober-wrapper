@@ -1,6 +1,6 @@
 # Quick Silver/CodeProber wrapper test
 
-Added a wrapper around the example "dc" silver program (silver/tutorials/dc).
+A simple CodeProber wrapper around the example "dc" silver program (silver/tutorials/dc).
 The wrapper is done in the style of [minimal probe wrapper](https://github.com/lu-cs-sde/codeprober/tree/master/minimal-probe-wrapper).
 
 The integration is very simple. It intercepts messages to standard out during evaluation. If a line is printed with a colon in the middle, it is presented as a property in CodeProber. Everything to the left of the colon is the property name, and everything to the right is the property value.
